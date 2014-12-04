@@ -17,7 +17,7 @@ int numAtoms = 300; // # points in band
  int IMGNO = 0;
 
 void setup() {
-   size(800, 600);
+   size(1000, 700);
    frameRate(30);   
    background(0); 
    fill(255);
@@ -72,7 +72,7 @@ void setup() {
 }
 
 void draw() {
-  beginRecord(PDF, "Overlays"+ IMGNO + ".pdf"); 
+  beginRecord(PDF, "Drawing"+ IMGNO + ".pdf"); 
   background(0); 
   band.moveBand(); // takes key input and undulates
   if (mousePressed) {
